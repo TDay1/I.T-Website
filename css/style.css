@@ -1,0 +1,312 @@
+section {
+  padding: 25px 0 35px;
+  background: #fff;
+}
+
+.parallax-container {
+  height: 500px;
+  width: 100%;
+}
+
+pre {
+  overflow: auto;
+}
+
+pre code {
+  word-wrap: normal;
+  white-space: pre;
+}
+
+footer {
+  background: #000;
+  color: #ddd;
+  padding: 30px 0 30px;
+  text-align: center;
+}
+
+footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #eee;
+  text-decoration: underline;
+}
+
+wrapper {
+  background-color: green; /* for vizualization purposes */
+  text-align: center;
+}
+
+
+
+.title{
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+	color: #ffffff;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* Menu stuff */
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+/* I'll be coding a top section & fancy nav! */
+body {
+    background: #1F2225;
+    margin: 0;
+    color: #fff;
+}
+/* Fixing them damn links! */
+a {
+    color: #000000;
+    text-decoration: none;
+}
+/* Navbar class */
+.menubar {
+	background: #FFF;
+	color: #000000;
+	position: fixed;
+	top: 0;
+    z-index: 99999999;
+	left: 0;
+	right: 0;
+	height: 80px;
+	text-align: center;
+}
+a:hover {
+    text-decoration: none;
+}
+/* Fix margins */
+.menubar ul {
+    padding: 0;
+    margin: 0;
+}
+/* Dropdown */
+.menubar ul ul {
+    position: absolute;
+    background: #2B3035;
+    top: 80px;
+    display: none;
+}
+.menubar ul ul li {
+    font-size: 16px;
+    display: block;
+    padding: 8px 0px;
+    margin: 0px 0px;
+}
+.menubar li {
+	display: inline-block;
+	vertical-align: top;
+	font-family: 'Varela Round', sans-serif;
+	transition: 160ms all ease-in-out;
+	font-size: 25px;
+	padding: 24px 0px;
+    width: 120px;
+    text-align: center;
+	border-bottom: transparent 2px solid;
+    cursor: pointer;
+}
+.menubar li#dd {
+    padding: 24px 0px;
+}
+.menubar li .fa-angle-down {
+    display: block;
+    margin-top: -20px;
+    top: 14px;
+    position: relative;
+}
+.menubar ul {
+    max-width: 1024px;
+    margin: auto;
+}
+#customArea #l {
+    text-align: left;
+}
+#customArea #c {
+    text-align: center;
+}
+#customArea #r {
+    text-align: right;
+}
+.menubar li:hover {
+    background: #000000;
+	border-color: #363636;
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px;
+}
+.logoHolder {
+    background: #101d3a url('https://puu.sh/l8s5U/07061c0500.png');
+    height: 400px;
+    margin-top: 80px;
+    display: table;
+    width: 100%;
+}
+.logoHolder .holder {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.logoHolder h2 {
+    color: #fff;
+    font-size: 54px;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    font-weight: normal;
+}
+.logoHolder button {
+    text-align: center;
+    color: #fff;
+    background: none;
+    border: #fff 2px solid;
+    font-family: 'Varela Round', sans-serif;
+    padding: 5px 15px;
+    transition: 300ms all ease-in-out;
+    font-size: 32px;
+    margin-top: 40px;
+}
+.logoHolder button:hover {
+    border-color: #878787;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px;
+    box-shadow: inset #000000 0px -50px;
+    cursor: pointer;
+}
+
+/* Menu the second */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: #fff;
+}
+#header-nav {
+  position: fixed;
+  top: 0;
+  display: block;
+  width: 100%;
+  background: black;
+  -webkit-transition: -webkit-transform 0.7s 0.3s ease;
+  -moz-transition: -moz-transform 0.7s 0.3s ease;
+  -ms-transition: -ms-transform 0.7s 0.3s ease;
+  transition: transform 0.7s .3s ease;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+#header-nav.hide-nav-bar {
+  -webkit-transform: translate(0, -100%);
+  -moz-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+  -webkit-backface-visibility: hidden;
+}
+a.menu-link {
+  float: right;
+  display: block;
+  padding: 1em;
+}
+nav[role=navigation] {
+  clear: right;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.js nav[role=navigation] {
+  overflow: hidden;
+  max-height: 0;
+}
+nav[role=navigation].active {
+  max-height: 15em;
+}
+nav[role=navigation] ul {
+  margin: 0;
+  padding: 0;
+  float: left;
+  padding: 0.7em 0;
+}
+nav[role=navigation] li a {
+  display: block;
+  padding: 0.8em;
+  font-size: 0.9em;
+}
+.menu-link {
+  height: 30px;
+  width: 33px;
+  cursor: pointer;
+}
+.bar1,
+.bar2,
+.bar3 {
+  margin-top: 3px;
+  background: #999;
+  width: 33px;
+  height: 4px;
+  position: absolute;
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+}
+.bar2 {
+  margin-top: 13px;
+}
+.bar3 {
+  margin-top: 23px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.brand {
+  float: left;
+  margin-left: 1em;
+  padding: 1em;
+}
+.brand h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+@media screen and (min-width: 48.25em) {
+  a.menu-link {
+    display: none;
+  }
+  .js nav[role=navigation] {
+    max-height: none;
+  }
+  nav[role=navigation] ul {
+    margin: 0 0 0 -0.25em;
+    border: 0;
+    float: right;
+  }
+  nav[role=navigation] li {
+    display: inline-block;
+    margin: 0 0.25em;
+  }
+  nav[role=navigation] li a {
+    border: 0;
+  }
+}
+.container {
+  max-width: 72em;
+  margin: 0 auto;
+}
+section {
+  margin-top: 4em;
+  padding: 1em;
+  color: #5c5c5c;
+}
+section hr {
+  border-bottom: none;
+  color: #f2f2f2;
+}
+.info {
+  text-align: center;
+}
